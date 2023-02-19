@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fetch(){
+        name=document.f1.p1.value;
+        gender=document.f1.Gender.value;
+        document.getElementById("demo").innerHTML=name.bold()+" is a "+gender.bold();
+        }
+    </script>
+</head>
+<body>
+    <fieldset>
+    <form name="f1" method="get">
+        <h1>A Simple Form</h1>
+
+            <h2>Form Fundamentals</h2>
+        <fieldset>
+            <legend>Customer Info</legend>
+        
+            <table>
+                <tr>
+                    <td><label>Name:</label></td>
+                    <td><input type="text" name="p1" autocomplete="off" placeholder="Enter your Name" required></td>
+                </tr>
+
+                <tr>
+                <td><label>Telephone:</label></td>
+                <td><input type="text" name="p1" autocomplete="off" placeholder="Pattern:234-567-8910"></td>
+                </tr>
+
+                <tr>
+                <td><label>Email Address:</label></td>
+                <td><input type="text" name="p1" autocomplete="off" placeholder="Enter your Email Address"></td>
+                
+            </table>
+
+
+
+            <td><p id="demo"></p></td>
+                    <tr>
+                    <td><p id="demo2"></p></td>
+        </fieldset>
+        <fieldset>
+            <legend>Books</legend>  
+                <tr>
+                    <td><input type="text" name="p1" autocomplete="off" placeholder="Enter your Name"></td>
+                </tr>
+
+                <tr>
+                    <td><label>Quantity(Maximum 5):</label></td>
+                    <td><input type="text" name="p1" autocomplete="off" placeholder="Enter your Name"></td>
+                </tr>
+        </fieldset>
+            
+                <tr>
+                    <td><input type="submit" value="submit" onclick="fetch()"></td>
+                </tr>
+            <td><p id="demo"></p></td>
+                    <tr>
+                    <td><p id="demo2"></p></td>
+        
+    </form>
+</fieldset>
+        
+    
+</body>
+</html>

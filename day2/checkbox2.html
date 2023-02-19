@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fetch(){
+            check="";
+            python=document.f1.python;
+            java=document.f1.java;
+            c=document.f1.c;
+            
+            if(python.checked==true)
+            check=check+"python ";
+            if(java.checked==true)
+            check=check+"java ";
+            if(c.checked==true)
+            check=check+"C++ ";
+            data="The Cources are "+check.bold();
+            document.getElementById('final').innerHTML=data;
+        }
+    </script>
+</head>
+<body>
+    <form name="f1">
+    <h1>The Cources</h1>
+    <label>Python</label><input type="checkbox" name="python" ><br>
+    <label>Java</label><input type="checkbox" name="java" ><br>
+    <label>C++</label><input type="checkbox" name="c" >
+    <p id="final"></p>
+    <input type="button" value="submit" onclick="fetch()">
+</form>
+</body>
+</html>

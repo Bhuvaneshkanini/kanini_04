@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <title>Document</title>
+    <script>
+        function fetch(){
+        name=document.f1.p1.value;
+        gender=document.f1.Gender.value;
+        document.getElementById("demo").innerHTML=name.bold()+" is a "+gender.bold();
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <fieldset>
+        <legend>Student Feedback Form</legend>
+            <label>Student Name:</label>
+            <input type="text" name="v1" placeholder="Enter the student name">
+        <br></br>
+            <label>Department:</label>
+            <select name="dept">
+                  <option value="CSE">CSE</option>
+                  <option value="IT">IT</option>
+                  <option value="ECE">ECE</option>
+                  <option value="MCA">MCA</option>
+                </select>
+        <br>
+            <label>Gender:</label>
+            <input name="Gender" value="male"type="radio">Male
+            <input name="Gender"value="female"type="radio">Female
+            </br>
+        <input type="button" value="submit">
+    </fieldset>
+    <p></p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,12 @@
+form{
+    margin: 10%;
+    display: table;
+}
+
+div{
+    display: table-row;
+    height: 5%;
+}
+label,input{
+    display:table-cell;
+}

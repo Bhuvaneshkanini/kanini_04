@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+
+<style>
+    p{
+        text-align: center;
+    }
+    p{
+        background-image: linear-gradient(30deg,aquamarine,rgb(127, 127, 255));
+    }
+    p::before{
+        color: black;
+        height: 5rem;
+        width: 2rem;
+    }
+@media print{
+    p{
+        font-size: 100px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: rgb(255, 255, 255);
+    }
+}
+@media screen and (min-width:600px){
+    
+    body{
+        background-color: brown;
+    }
+    p.test{
+        color: rgb(0, 0, 0);
+        font-family: "montserrat",sans-serif;
+    }
+    p::first-letter{
+        font-size: 50px;
+    }
+    
+}
+@media screen and (max-width:600px){
+    body{
+        background-color: rgb(114, 42, 165);
+        
+    }
+    p.test{
+        color: rgb(255, 255, 255);
+        font-family: "Tangerine",serif;    
+    }
+    p::first-letter{
+        font-size: 50px;
+    }
+}
+</style>
+</head>
+<body>
+    <p class="test">Hello this is the CSS3</p>
+</body>
+</html>

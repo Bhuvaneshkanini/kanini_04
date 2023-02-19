@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function fetch(){
+        val="";
+        text=f1.course.value;
+        val=val+text;
+        document.getElementById("final").innerHTML=val;
+        
+    }
+</script>
+<body>
+    <form id="f1">
+    <select id="course">
+        <option value="py">python</option>
+        <option value="ja">java</option>
+        <option value="ph">php</option>
+    </select>
+    <input type="button" value="submit" onclick="fetch()">
+    <p id="final"></p>
+</form>
+</body>
+</html>

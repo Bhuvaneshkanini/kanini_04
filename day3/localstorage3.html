@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fetch(){
+            localStorage.setItem("1",JSON.stringify(document.f1.cst_name.value));
+        }
+    </script>
+</head>
+<body>
+    <form name="f1">
+        <label>Name:</label>
+        <input type="text" name="cst_name"><br>
+        <label>Food:</label>
+        <input type="text" name="cst_food">
+        <input type="submit" value="submit" onclick="fetch()">
+    </form>
+</body>
+</html>
